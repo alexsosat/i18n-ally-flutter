@@ -1,5 +1,5 @@
 export default {
-  github: 'https://github.com/lokalise/i18n-ally',
-  document: 'https://github.com/lokalise/i18n-ally/blob/master/README.md',
-  issues: 'https://github.com/lokalise/i18n-ally/issues',
+  github: 'https://github.com/alexsosat/i18n-ally-flutter',
+  document: 'https://github.com/alexsosat/i18n-ally-flutter/blob/master/README.md',
+  issues: 'https://github.com/alexsosat/i18n-ally-flutter/issues',
 }

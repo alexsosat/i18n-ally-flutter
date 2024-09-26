@@ -138,6 +138,10 @@ export class Config {
     return this.getConfig<boolean>('annotationInPlace') ?? true
   }
 
+  static get annotationRange(): 'key' | 'annotation' {
+    return this.getConfig('annotationRange') ?? 'key'
+  }
+
   static get namespace(): boolean | undefined {
     return this.getConfig<boolean>('namespace')
   }
@@ -180,7 +184,7 @@ export class Config {
     return this.getConfig<SortCompare>('sortCompare') || 'binary'
   }
 
-  static get sortLocale(): string | undefined{
+  static get sortLocale(): string | undefined {
     return this.getConfig<string>('sortLocale')
   }
 

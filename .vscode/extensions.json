@@ -3,7 +3,7 @@
   // for the documentation about the extensions.json format
   "recommendations": [
     "dbaeumer.vscode-eslint",
-    "lokalise.i18n-ally",
+    "alexsosat.i18n-ally-flutter",
     "amodio.tsl-problem-matcher",
   ]
 }

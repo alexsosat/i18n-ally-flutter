@@ -24,9 +24,7 @@ class CompletionProvider implements CompletionItemProvider {
         .map((key) => {
           let resolvedKey = key
           if (scopedKey)
-          {
-            resolvedKey = key.replace(`${scopedKey}.`, "")
-          }
+            resolvedKey = key.replace(`${scopedKey}.`, '')
           const item = new CompletionItem(resolvedKey, CompletionItemKind.Text)
           item.detail = loader.getValueByKey(key)
           return item
