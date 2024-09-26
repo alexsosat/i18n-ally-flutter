@@ -32,9 +32,8 @@ class FlutterL10nFramework extends Framework {
 
   // for visualize the regex, you can use https://regexper.com/
   usageMatchRegex = [
-    '(?<annotation>S\\.of\\([\\w.]+\\)[?!]?\\.(?<key>{key}))\\W',
+    '(?<annotation>AppLocalizations\\.current\\.(?<key>{key}))\\W',
     '(?<annotation>AppLocalizations\\.of\\([\\w.]+\\)[?!]?\\.(?<key>{key}))\\W',
-    '(?<annotation>AppLocalizations\\.current\\.[\\w.]+\\.[?!]?\\.(?<key>{key}))\\W',
   ]
 
   preferredKeystyle?: KeyStyle = 'flat'
@@ -43,9 +42,8 @@ class FlutterL10nFramework extends Framework {
 
   refactorTemplates(keypath: string) {
     return [
-      `S.of(context).${keypath}`,
-      `AppLocalizations.of(context).${keypath}`,
       `AppLocalizations.current.${keypath}`,
+      `AppLocalizations.of(context).${keypath}`,
       keypath,
     ]
   }
