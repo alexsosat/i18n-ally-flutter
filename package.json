@@ -1,7 +1,7 @@
 {
   "publisher": "alexsosat",
   "name": "i18n-ally-flutter",
-  "version": "2.13.1",
+  "version": "2.13.2",
   "displayName": "i18n Ally (flutter)",
   "description": "🌍 All in one i18n extension for VS Code",
   "keywords": [
@@ -828,6 +828,7 @@
               "i18n-tag",
               "flutter",
               "flutter-l10n",
+              "flutter-easy-localization",
               "vue-sfc",
               "ember",
               "chrome-ext",
